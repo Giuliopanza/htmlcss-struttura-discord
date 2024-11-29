@@ -15,7 +15,7 @@ nav{
     margin: 0 50px;
 }
 
-.flex-container{
+.flex-container-1, #flex-container-2{
     display: flex;
 }
 
@@ -31,13 +31,13 @@ nav{
     background-color: yellow;
 }
 
-#button{
+#button-1{
     height: 30px;
     width: 30px;
     background-color: yellow;
 }
 
-header .flex-container{
+header .flex-container-1{
     align-items: center;
     justify-content: space-around;
 }
@@ -46,4 +46,61 @@ article{
     background-color: blueviolet;
     height: 150px;
     margin: 50px 200px 0 200px;
+}
+
+
+#flex-container-2{
+    background-color: grey;
+    height: 600px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+main .flex-container-1{
+    background-color: grey;
+    height: 400px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-1 .img-1{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    margin: 0 20px;
+}
+
+.flex-container-1 .text-1{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    margin: 0 20px;
+}
+
+#flex-container-2 #text-2{
+    background-color: yellow;
+    height: 100px;
+    width: 600px;
+}
+
+#flex-container-2 #img-2{
+    background-color: green;
+    height: 300px;
+    width: 600px;
+}
+
+#flex-container-2 #button-2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+main #flex-container-2{
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
 }
